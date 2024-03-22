@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+    font-family: 'roboto', sans-serif ;
+}
+
+.window{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+
+.left-login > h1{
+    color: rgb(153, 0, 255);
+    font-size: 3vw;
+}
+
+.left-image{
+    width: 35vw;
+    margin-bottom: 2rem;
+}
+
+.right-login{
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.card-login{
+    background-color: rgb(28, 27, 27);
+    width: 60%;
+    padding: 30px 35px;
+    border-radius: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 40px rgb(153, 0, 255);
+}
+
+.card-login > h1{
+    color:  rgb(153, 0, 255);
+    font-size: 4vw;
+    font-weight: 800;
+    margin: 0;
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin:12px 0;
+}
+
+.inputs > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(41, 41, 41);
+    outline: none;
+    padding: 15px;
+    font-size: 12pt;
+    color: rgba(255, 255, 255, 0.554);
+    box-sizing: border-box;
+}
+
+.inputs > label{
+    color: rgba(255, 255, 255, 0.554);
+    margin-bottom: 10px;
+}
+
+.btn-login{
+    margin: 25px;
+    width: 100%;
+    padding: 12px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.848);
+    border-radius: 12px;
+    background-color:rgb(153, 0, 255);
+    font-weight: 800;
+    letter-spacing: 3px;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px  rgb(153, 0, 255);
+}
+
+.btn-login:hover{
+    background-color:rgba(153, 0, 255, 0.709) ;
+}
+
+@media only screen and (max-width:600px){
+    .window{
+        flex-direction: column;
+    }
+
+    .left-login > h1{
+        display: none;
+    }
+
+    .left-login{
+        width: 100%;
+        height: auto ;
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .left-image{
+        width: 50vw;
+    }
+
+    .card-login{
+        width: 90%;
+    }
+}
